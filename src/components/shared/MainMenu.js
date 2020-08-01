@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 export default class MainMenu extends Component {
 	render() {
@@ -7,8 +8,18 @@ export default class MainMenu extends Component {
 				<div id="navbar" className="collapse">
 					<ul>
 						<li>
-							<a href="#">
+							<Link to="/">
 								<span>Home</span>
+							</Link>
+						</li>
+						<li>
+							<Link to="/about">
+								<span>About</span>
+							</Link>
+						</li>
+						<li>
+							<a href="#">
+								<span>Education</span>
 							</a>
 						</li>
 					</ul>
